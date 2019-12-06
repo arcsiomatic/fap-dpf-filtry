@@ -1,0 +1,53 @@
+RewriteEngine on
+
+#RewriteBase /
+
+#<IfModule mod_php5.c>
+#   php_value upload_max_filesize 20M
+#   php_value post_max_size 20M
+#</IfModule>
+
+
+#RewriteRule ^sitemap.xml$ xml/sitemap.php [L,QSA]
+#RewriteRule ^zbozi.xml$ xml/zbozi_cz.php [L,QSA]
+#RewriteRule ^mapa-stranek$ mapa-stranek.php [L,QSA]
+
+#RewriteCond %{HTTP_HOST} ^jaktomam.loc
+#RewriteRule (.*) http://www.jaktomam.loc/$1 [R=301,QSA,L]
+RewriteCond %{HTTP_HOST} ^jaktomam.cz
+RewriteRule (.*) http://www.jaktomam.cz/$1 [R=301,QSA,L]
+
+#RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(([^/]+/)*)index\.(html?|php[45]?|[aj]spx?)\ HTTP/
+
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)?$ index.php?p1=$1&p2=$2&p3=$3&p4=$4&p5=$5&p6=$6&p7=$7 [L,QSA]
+# www.example.com/parametr1/parametr2/parametr3/parametr4/parametr5/parametr6/parametr7
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/(.*)/(.*)/(.*)/(.*)/(.*)?$ index.php?p1=$1&p2=$2&p3=$3&p4=$4&p5=$5&p6=$6 [L,QSA]
+# www.example.com/parametr1/parametr2/parametr3/parametr4/parametr5/parametr6
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/(.*)/(.*)/(.*)/(.*)?$ index.php?p1=$1&p2=$2&p3=$3&p4=$4&p5=$5 [L,QSA]
+# www.example.com/parametr1/parametr2/parametr3/parametr4/parametr5
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/(.*)/(.*)/(.*)?$ index.php?p1=$1&p2=$2&p3=$3&p4=$4 [L,QSA]
+# www.example.com/parametr1/parametr2/parametr3/parametr4/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/(.*)/(.*)?$ index.php?p1=$1&p2=$2&p3=$3 [L,QSA]
+# www.example.com/parametr1/parametr2/parametr3/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/(.*)?$ index.php?p1=$1&p2=$2 [L,QSA]
+#www.example.com/parametr1/parametr2/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?p1=$1 [L,QSA]
+#www.example.com/parametr1/
+

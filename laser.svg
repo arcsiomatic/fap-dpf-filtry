@@ -1,0 +1,82 @@
+<svg   id="laser-logo"   x="0px"   y="0px"   viewBox="0 0 226.8 226.8"     width="400"   height="400">
+
+<defs>
+		<filter id="blur_cervena">
+			<feGaussianBlur id="fe_blur_cervena" in="SourceGraphic" stdDeviation="0,0"></feGaussianBlur>
+                         <animate attributeType="XML" id="blurr" attributeName="values" from=".3, 1" to="0, 0" dur="1s" values="0,0;.3,1;0, 0;" keyTimes="0;1" begin="indefinite"></animate>
+		</filter>
+                <filter id="blur_modra">
+			<feGaussianBlur id="fe_blur_modra" in="SourceGraphic" stdDeviation="0,0"></feGaussianBlur>
+                         <animate attributeType="XML" id="blurr" attributeName="values" from=".3, 1" to="0, 0" dur="1s" values="0,0;.3,1;0, 0;" keyTimes="0;1" begin="indefinite"></animate>
+		</filter>
+                <filter id="blur_bila">
+			<feGaussianBlur id="fe_blur_bila" in="SourceGraphic" stdDeviation="0,0"></feGaussianBlur>
+                         <animate attributeType="XML" id="blurr" attributeName="values" from=".3, 1" to="0, 0" dur="1s" values="0,0;.3,1;0, 0;" keyTimes="0;1" begin="indefinite"></animate>
+		</filter>
+
+                <filter id="blurred" color-interpolation-filters="sRGB" x="0%" y="0%" height="10%" width="10%">
+  <feColorMatrix result="wispy" type="matrix" values="8 0 0 0 -1 4 0 4 3 -1 4 0 0 0 -1 1 0 0 0 0">
+    <animate attributeType="XML" id="blurredAnimation" attributeName="values" from="8 0 0 0 -1 4 0 4 3 -1 4 0 0 0 -1 1 0 0 0 0" to="3 0 0 0 -1 4 0 4 3 -1 4 0 0 0 -1 1 0 0 0 0" dur="1s" values="8 0 0 0 -1 4 0 4 3 -1 4 0 0 0 -1 1 0 0 0 0;3 0 0 0 -1 4 0 4 3 -1 4 0 0 0 -1 1 0 0 0 0;" keyTimes="0;1" begin="indefinite"></animate>
+  </feColorMatrix>
+</filter>
+</defs>
+<!--bila-->
+ <path
+     id="bila" filter="url(#blur_bila)" style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;
+    stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:.5"
+     d="m 58.6696 182.968 c 16.2 19.8 21.635 26.444 47.335 28.144 c 24.6 1.4 65.3 -5.2 74.8 -23.6 c 9.8 -16.6 16.5955 -38.5123 20.3955 -68.5123 c 0.5 -14 -2.06132 -26.4671 -8.16131 -37.8671 C 185.021 67.8658 176.768 56.0325 167.368 45.5091 C 151.168 25.7091 143.514 18.1819 117.814 16.4819 C 93.2136 15.0819 53.6115 22.5173 44.1115 40.9173 C 34.3115 57.4173 26.9909 78.8716 23.1909 108.972 c -0.5 14 1.98971 26.6342 8.08971 38.0342 c 5 9.7 13.1342 18.8465 19.9342 27.2465 c 2.41208 2.85132 5.26854 6.04402 7.45474 8.71605 Z" transform="rotate(10.4392 113 113)">
+     <!--bila COLOR ANIMATE-->
+      <animate class="color_animate" attributeName="stroke" values="#ffffff;#28B8CE;#e60768ff,#ffffff" dur="3s" repeatCount="indefinite"></animate>
+      <!--bila PATH ANIMATE-->
+  <animate id="bila_animation_path" dur="7.27s" repeatCount="indefinite" attributeName="d" values="m 57.5,182.3 c 16.2,19.8 22.9,27.9 48.6,29.6 24.6,1.4 65.3,-5.2 74.8,-23.6 9.8,-16.6 16.5,-39.3 20.3,-69.3 0.5,-14 -2.3,-26.3 -8.4,-37.7 C 184.78214,68.032868 176.09967,56.223494 166.7,45.7 150.5,25.9 143.8,17.8 118.1,16.1 93.5,14.7 52.8,21.3 43.3,39.7 33.5,56.2 26.8,78.8 23,108.9 c -0.5,14 2.3,26.3 8.4,37.7 5,9.7 12.8,19.3 19.6,27.7 2.412078,2.85132 4.313797,5.32797 6.5,8 z;
+m 69.75,189.3 c 16.2,19.8 9.65,12.65 35.35,14.35 24.6,1.4 65.3,-5.2 74.8,-23.6 9.8,-16.6 17.5,-31.05 21.3,-61.05 0.5,-14 0.2,-28.05 -5.9,-39.45 C 187.28214,66.282868 183.09967,54.223494 173.7,43.7 157.5,23.9 140.8,21.8 115.1,20.1 90.5,18.7 61.3,34.05 51.8,52.45 c -9.8,16.5 -23,27.1 -26.8,57.2 -0.5,14 -0.95,29.8 5.15,41.2 5,9.7 16.3,14.55 23.1,22.95 2.412078,2.85132 14.313797,12.82797 16.5,15.5 z;
+m 57.5,182.3 c 16.2,19.8 22.9,27.9 48.6,29.6 24.6,1.4 65.3,-5.2 74.8,-23.6 9.8,-16.6 16.5,-39.3 20.3,-69.3 0.5,-14 -2.3,-26.3 -8.4,-37.7 C 184.78214,68.032868 176.09967,56.223494 166.7,45.7 150.5,25.9 143.8,17.8 118.1,16.1 93.5,14.7 52.8,21.3 43.3,39.7 33.5,56.2 26.8,78.8 23,108.9 c -0.5,14 2.3,26.3 8.4,37.7 5,9.7 12.8,19.3 19.6,27.7 2.412078,2.85132 4.313797,5.32797 6.5,8 z;" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"></animate>
+  <!--bila ROTATE ANIMATE-->
+<animateTransform id="bila_animation_rotate" attributeName="transform" attributeType="XML" type="rotate" from="0 113 113" to="360 113 113" dur="8.1s" repeatCount="indefinite"></animateTransform>
+
+</path>
+
+
+
+<!--MODRA-->
+<path id="modra" filter="url(#blur_modra)"
+      style="opacity:1;fill:none;fill-opacity:1;
+        stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;
+stroke-opacity:.3" transform="rotate(168.356 113 113)"
+      d="m 126 22.4 c -10.2 0 -24.1917 -2.18115 -36.6917 -0.281154 c -12.5 3.4 -24.9492 10.6235 -33.3492 19.8235 c -7.2 7.5 -17.2684 20.0023 -22.7684 29.1023 c -14.6329 22.3096 -7.12233 49.6896 -3.51775 67.5364 c 5.5 24.7 11.8777 50.7201 30.6777 55.1201 c 17.3 5.2 47.9093 10.3494 75.4093 5.94938 c 12.4 -3.3 28.1282 -5.87414 36.5282 -15.0741 c 7.2 -7.5 11.053 -27.8329 16.653 -36.9329 c 14.6329 -22.3096 11.0376 -35.4967 7.43302 -53.3436 C 190.874 69.6 180.826 39.4199 162.026 35.0199 C 152.526 32.2199 138.3 22.4 126 22.4 Z" >
+    <!--MODRA COLOR ANIMATE-->
+    <animate class="color_animate" attributeName="stroke" values="#28B8CE;#ffffff;#e60768ff;#28B8CE;" dur="3s" repeatCount="indefinite"></animate>
+    <!--MODRA PATH ANIMATE-->
+    <animate id="modra_animation_path" dur="22.31s" repeatCount="indefinite" attributeName="d" values="m 126,22.4 c -10.2,0 -21.5,1 -34,2.9 -12.5,3.4 -22.6,9.4 -31,18.6 -7.2,7.5 -13.5,17.8 -19,26.9 -14.632898,22.309613 -21.804576,46.75314 -18.2,64.6 5.5,24.7 22.4,63.2 41.2,67.6 17.3,5.2 39.1,5.7 66.6,1.3 12.4,-3.3 22.5,-9.3 30.9,-18.5 7.2,-7.5 13.5,-17.8 19.1,-26.9 14.6329,-22.30961 21.80458,-46.75314 18.2,-64.6 C 194.3,69.6 177.4,31.1 158.6,26.7 149.1,23.9 138.3,22.4 126,22.4 Z;
+m 126,22.4 c -10.2,0 -24.25,-2.25 -36.75,-0.35 -12.5,3.4 -25,10.65 -33.4,19.85 -7.2,7.5 -17.35,20.05 -22.85,29.15 -14.632898,22.309613 -6.804576,49.75314 -3.2,67.6 5.5,24.7 11.65,50.45 30.45,54.85 17.3,5.2 48.1,10.45 75.6,6.05 12.4,-3.3 28.25,-5.8 36.65,-15 7.2,-7.5 11,-28.05 16.6,-37.15 14.6329,-22.30961 10.80458,-35.25314 7.2,-53.1 C 190.8,69.6 180.9,39.6 162.1,35.2 152.6,32.4 138.3,22.4 126,22.4 Z;
+m 126,22.4 c -10.2,0 -21.5,1 -34,2.9 -12.5,3.4 -22.6,9.4 -31,18.6 -7.2,7.5 -13.5,17.8 -19,26.9 -14.632898,22.309613 -21.804576,46.75314 -18.2,64.6 5.5,24.7 22.4,63.2 41.2,67.6 17.3,5.2 39.1,5.7 66.6,1.3 12.4,-3.3 22.5,-9.3 30.9,-18.5 7.2,-7.5 13.5,-17.8 19.1,-26.9 14.6329,-22.30961 21.80458,-46.75314 18.2,-64.6 C 194.3,69.6 177.4,31.1 158.6,26.7 149.1,23.9 138.3,22.4 126,22.4 Z;" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"></animate>
+    <!--MODRA ROTATE ANIMATE-->
+<animateTransform id="modra_animation_rotate" attributeName="transform" attributeType="XML" type="rotate" from="360 113 113" to="0 113 113" dur="7.88s" repeatCount="indefinite"></animateTransform>
+
+
+</path>
+
+
+<!--CERVENA-->
+
+<path id="cervena" filter="url(#blur_cervena)" 
+      style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;
+stroke-opacity:.4"
+      d="m 119.165 24.4129 c -7 0 -15.9986 0.292341 -22.7986 2.39234 C 81.537 31.5075 70.5377 39.8408 58.5167 46.4129 C 36.3167 58.7129 28.2833 65.4628 21.5833 90.2628 c -6.2 23.8 -6.73338 65.4038 9.26662 78.2038 c 13.6962 14.0564 31.6937 22.7475 59.8937 32.1475 c 13.4 3.1 26.9666 1.76799 39.1666 -2.13201 c 14.8298 -4.70226 26.6367 -10.8818 39.1962 -17.1847 c 22.3 -12.2 30.7372 -18.3217 37.3372 -43.1217 c 6.2 -23.8 6.82312 -62.8462 -8.45896 -76.4988 c -14.1 -12.8 -33.0847 -24.6769 -61.2847 -34.0769 c -6 -1.5 -11.9346 -3.18714 -17.5346 -3.18714 Z" transform="rotate(286.095 113 113)">
+    <!-- CERVENA COLOR ANIMATE-->
+    <animate class="color_animate" attributeName="stroke" values="#e60768ff;#28B8CE;#ffffff;#e60768ff;" dur="3s" repeatCount="indefinite"></animate>
+    <!--CERVENA PATH ANIMATE-->
+      <animate id="cervena_animation_path" dur="13.56s" repeatCount="indefinite" attributeName="d" values="m 119.3,25.4 c -7,0 -13.8,1.1 -20.6,3.2 C 83.870233,33.302262 71.659454,41.097106 59.1,47.4 36.9,59.7 27.7,64.7 21,89.5 c -6.2,23.8 -7.9,65 8.1,77.8 14.1,12.8 34.7,23.6 62.9,33 13.4,3.1 25.8,2.8 38,-1.1 14.82977,-4.70226 27.04055,-12.49711 39.6,-18.8 22.3,-12.2 31.5,-17.2 38.1,-42 6.2,-23.8 7.9,-65 -8.1,-77.8 -14.1,-12.8 -34.7,-23.6 -62.9,-33 -6,-1.5 -11.8,-2.2 -17.4,-2.2 z;
+m 118.55,19.9 c -7,0 -26.05,-3.4 -32.85,-1.3 -14.829767,4.702262 -20.290546,15.497106 -29.85,23.3 -22.2,12.3 -24.9,27.05 -31.6,51.85 -6.2,23.8 -1.4,67.25 14.6,80.05 11.85,19.8 17.95,18.85 46.15,28.25 13.4,3.1 32.3,-2.95 44.5,-6.85 14.82977,-4.70226 24.79055,-3.49711 37.35,-9.8 22.3,-12.2 27.25,-23.45 33.85,-48.25 6.2,-23.8 1.9,-53 -10.1,-70.55 -14.1,-12.8 -25.7,-29.6 -53.9,-39 -6,-1.5 -12.55,-7.7 -18.15,-7.7 z;
+m 119.3,25.4 c -7,0 -13.8,1.1 -20.6,3.2 C 83.870233,33.302262 71.659454,41.097106 59.1,47.4 36.9,59.7 27.7,64.7 21,89.5 c -6.2,23.8 -7.9,65 8.1,77.8 14.1,12.8 34.7,23.6 62.9,33 13.4,3.1 25.8,2.8 38,-1.1 14.82977,-4.70226 27.04055,-12.49711 39.6,-18.8 22.3,-12.2 31.5,-17.2 38.1,-42 6.2,-23.8 7.9,-65 -8.1,-77.8 -14.1,-12.8 -34.7,-23.6 -62.9,-33 -6,-1.5 -11.8,-2.2 -17.4,-2.2 z;" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"></animate>
+      <!--CERVENA ROTATE ANIMATE-->
+<animateTransform id="cervena_animation_rotate" attributeName="transform" attributeType="XML" type="rotate" from="0 113 113" to="360 113 113" dur="7.77s" repeatCount="indefinite"></animateTransform>
+
+</path>
+
+
+
+
+
+
+</svg>
